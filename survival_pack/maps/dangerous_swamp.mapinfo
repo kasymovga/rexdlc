@@ -1,0 +1,7 @@
+type surv
+fog 0.1 0 0.4 0.3
+has weapons
+author 802.1ad
+description Swamp Place
+cdtrack 4
+require_dlc survival_pack
