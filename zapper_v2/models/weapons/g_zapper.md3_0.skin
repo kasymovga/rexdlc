@@ -1,0 +1,7 @@
+ZAPPER,textures/rtzapper
+core,textures/rtzapper_core
+//plane_2,gfx/colors/black
+plane_1,textures/rtzapper_innerglow
+barrel,pryaxe_balls_outer
+barrel2,textures/zapper_fx
+ring,textures/rtzapper_ringfx
