@@ -1,0 +1,7 @@
+author 802.1ad, Laggy Turtle
+title Dark Church
+description Dark Church & Cemetery
+type surv
+has weapons
+cdtrack music/church_by_laggy_turtle.ogg
+require_dlc survival_pack2
