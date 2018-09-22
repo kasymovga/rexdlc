@@ -1,0 +1,26 @@
+0 0 0 0
+0 29 30 0 // both_death1
+29 1 30 1 // both_dead1
+30 16 30 0 // both_death2
+46 1 30 1 // both_dead2
+47 20 30 0 // both_death3
+67 1 30 1 // both_dead3
+68 37 13 0 // torso_gesture
+105 6 15 0 // torso_attack
+111 6 15 0 // torso_attack2
+117 5 20 0 // torso_drop
+122 4 20 0 // torso_raise
+126 1 5 1 // torso_stand
+127 1 6 1 // torso_stand2
+128 6 24 1 // legs_walkcr
+134 10 15 1 // legs_walk
+144 7 10 1 // legs_run
+151 10 12 1 // legs_back
+161 8 12 1 // legs_swim
+169 3 15 0 // legs_jump
+172 8 20 0 // legs_land
+180 9 15 0 // legs_jumpb
+189 5 20 0 // legs_landb
+194 15 12 1 // legs_idle
+209 19 15 1 // legs_idlecr
+228 15 30 1 // legs_turn
