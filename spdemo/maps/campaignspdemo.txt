@@ -1,0 +1,2 @@
+"//campaign:Rexuiz Single Player Demo Campaign"
+"single","rexsp01_city",0,1,10,,"Pre-Alpha GamePlay Demo",""
