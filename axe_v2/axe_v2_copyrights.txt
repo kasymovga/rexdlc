@@ -1,0 +1,3 @@
+Original author: James White https://opengameart.org/users/jameswhite
+License: CC-BY 2.0 http://creativecommons.org/licenses/by/2.0/
+Changes: converted to md3, scaled, rotated.
