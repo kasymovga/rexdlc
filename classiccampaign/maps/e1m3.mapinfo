@@ -1,0 +1,7 @@
+title the Necropolis
+description E1M3
+author id Software
+cdtrack 6
+has weapons
+type single
+require_dlc rspear supershotgun arachna rm_effects_v2

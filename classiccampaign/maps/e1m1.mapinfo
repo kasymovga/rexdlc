@@ -1,0 +1,7 @@
+author id Software
+title E1M1
+description E1M1 Rexuiz Edition
+cdtrack 4
+type single
+has weapons
+require_dlc rspear supershotgun arachna rm_effects_v2

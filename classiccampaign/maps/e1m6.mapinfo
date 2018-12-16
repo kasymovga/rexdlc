@@ -1,0 +1,7 @@
+title The Door To Chthon
+description <DESCRIPTION>
+author <AUTHOR>
+cdtrack 10
+has weapons
+type single
+require_dlc rspear supershotgun arachna rm_effects_v2

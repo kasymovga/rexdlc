@@ -1,0 +1,7 @@
+title the Grisly Grotto
+description E1M4
+author id Software
+cdtrack 14
+has weapons
+type single
+require_dlc rspear supershotgun arachna rm_effects_v2

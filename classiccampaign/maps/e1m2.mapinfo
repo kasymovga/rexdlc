@@ -1,0 +1,7 @@
+title Castle of the Damned
+description E1M2
+author id Software
+cdtrack 7
+has weapons
+type single
+require_dlc rspear supershotgun arachna rm_effects_v2
