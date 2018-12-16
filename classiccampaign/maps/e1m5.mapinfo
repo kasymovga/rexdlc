@@ -4,4 +4,3 @@ author id Software
 cdtrack 16
 has weapons
 type single
-require_dlc rspear supershotgun arachna rm_effects_v2
