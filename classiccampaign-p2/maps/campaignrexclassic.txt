@@ -1,0 +1,5 @@
+"//campaign:Rexuiz Classic Campaign"
+"single","e1m1",0,1,0,,"Episode 1","First episode from the original Quake(r) from id Software"
+"single","e2m1",0,1,0,,"Episode 2","Second episode from the original Quake(r) from id Software"
+"single","e3m1",0,1,0,,"Episode 3","Third episode from the original Quake(r) from id Software"
+"single","e4m1",0,1,0,,"Episode 4","Fourth episode from the original Quake(r) from id Software"

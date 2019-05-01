@@ -1,0 +1,12 @@
+title the Palace of Hate
+description E4M4
+author id Software
+cdtrack 18
+has weapons
+type single
+settemp_for_type all sv_gameplayfix_useheightforplat 1
+// optional: fog density red green blue alpha mindist maxdist
+// optional: settemp_for_type (all|gametypename) cvarname value
+// optional: clientsettemp_for_type (all|gametypename) cvarname value
+// optional: size mins_x mins_y mins_z maxs_x maxs_y maxs_z
+// optional: hidden
