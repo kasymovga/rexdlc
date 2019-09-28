@@ -3838,6 +3838,7 @@ brushDef
 "target2" "field1"
 "target" "wave2group"
 "target3" "field2"
+"target4" "through_field1_teleporter"
 // brush 0
 {
 brushDef
@@ -3906,6 +3907,7 @@ brushDef
 "targetname" "wave2finished"
 "target" "field1"
 "target2" "field2"
+"target3" "through_field1_teleporter"
 }
 // entity 16
 {
@@ -3982,6 +3984,7 @@ brushDef
 "target" "wave3group"
 "target2" "field2"
 "target3" "field3"
+"target4" "through_field2_teleporter"
 // brush 0
 {
 brushDef
@@ -4036,6 +4039,7 @@ brushDef
 "targetname" "wave3finished"
 "target" "field3"
 "target2" "field2"
+"target4" "through_field2_teleporter"
 }
 // entity 32
 {
@@ -4189,6 +4193,7 @@ brushDef
 "target" "wave4group"
 "target2" "field3"
 "target3" "field4"
+"target4" "through_field3_teleporter"
 // brush 0
 {
 brushDef
@@ -4223,6 +4228,7 @@ brushDef
 "targetname" "wave4finished"
 "target" "field3"
 "target2" "field4"
+"target3" "through_field3_teleporter"
 }
 // entity 51
 {
@@ -4230,6 +4236,7 @@ brushDef
 "target" "wave5group"
 "target2" "field4"
 "target3" "field5"
+"target4" "through_field4_teleporter"
 // brush 0
 {
 brushDef
@@ -4258,6 +4265,7 @@ brushDef
 "targetname" "wave5finished"
 "target" "field4"
 "target2" "field5"
+"target3" "through_field4_teleporter"
 }
 // entity 54
 {
@@ -4916,4 +4924,62 @@ brushDef
 {
 "classname" "item_rockets"
 "origin" "64 -1600 0"
+}
+// entity 156
+{
+"classname" "coop_teleporter"
+"origin" "-2096 -1536 0"
+"target" "through_field2"
+"targetname" "through_field2_teleporter"
+}
+// entity 157
+{
+"classname" "misc_teleporter_dest"
+"origin" "-2560 -2496 32"
+"targetname" "through_field1"
+"angle" "90"
+}
+// entity 158
+{
+"classname" "coop_teleporter"
+"origin" "-2560 -2688 0"
+"target" "through_field1"
+"targetname" "through_field1_teleporter"
+"angle" "-90"
+}
+// entity 159
+{
+"classname" "misc_teleporter_dest"
+"origin" "-928 -1536 368"
+"targetname" "through_field2"
+}
+// entity 160
+{
+"classname" "coop_teleporter"
+"origin" "-1024 2976 0"
+"targetname" "through_field4_teleporter"
+"target" "through_field4"
+"angle" "90"
+}
+// entity 161
+{
+"classname" "misc_teleporter_dest"
+"origin" "-1024 3088 24"
+"targetname" "through_field4"
+"angle" "90"
+}
+// entity 162
+{
+"classname" "coop_teleporter"
+"origin" "1184 -3584 0"
+"angle" "180"
+"targetname" "through_field3_teleporter"
+"target" "through_field3"
+}
+// entity 163
+{
+"classname" "misc_teleporter_dest"
+"origin" "1072 -3584 24"
+"angle" "180"
+"targetname" "through_field3"
 }

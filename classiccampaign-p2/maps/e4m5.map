@@ -10140,7 +10140,6 @@
 {
 "classname" "monster_shalrath"
 "origin" "1583 232 38"
-"targetname" "t68"
 "angle" "270"
 "target" "t168"
 }
