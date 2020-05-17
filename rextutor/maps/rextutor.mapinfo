@@ -1,0 +1,7 @@
+author 802.1ad, Claymore
+title rextutor
+description Rexuiz tutorial
+cdtrack 10
+type single
+hidden
+settemp_for_type all single_g_balance_laser_primary_force 400
