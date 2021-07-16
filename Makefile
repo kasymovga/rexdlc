@@ -7,4 +7,5 @@ essential: zzz-rexdlc_pryaxe_balls.pk3 zzz-rexdlc_rm_arc.pk3 zzz-rexdlc_rm_effec
 extra: zzz-rexdlc_flagicons.pk3 zzz-rexdlc_nadgets.pk3 zzz-rexdlc_rm_laser.pk3 zzz-rexdlc_car_v1.pk3
 
 zzz-rexdlc_%.pk3: %
+	test -f $</rexdlc_$<.serverpackage || echo 1 > $</rexdlc_$<.serverpackage
 	cd $< && zip -r ../$@ *
