@@ -1,0 +1,6 @@
+# Wavefront material file exported with NetRadiants brushexport plugin.
+# Material Count: 1
+
+newmtl textures/evil8_base/e8_base1b
+Kd 0.224315 0.227184 0.236662
+map_Kd textures/evil8_base/e8_base1b
