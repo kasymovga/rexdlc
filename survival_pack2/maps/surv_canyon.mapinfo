@@ -1,7 +1,6 @@
 title Survival Canyon
-description Canyon of death
-author 802.1ad, Laggy Turtle
-cdtrack music/canyon_by_laggy.ogg
+description Canyon of death. Music: "Abandeoned Fields" by Dredile from freesounds.org
+author 802.1ad
+cdtrack music/canyon.ogg
 has weapons
 type surv
-require_dlc survival_pack2

@@ -1,7 +1,6 @@
-author 802.1ad, Laggy Turtle
-title Dark Church
+author 802.1ad
+title Dark Church. Music: "horror ambience 10" by klankbeeld from freesounds.org
 description Dark Church & Cemetery
 type surv
 has weapons
-cdtrack music/church_by_laggy_turtle.ogg
-require_dlc survival_pack2
+cdtrack music/church.ogg

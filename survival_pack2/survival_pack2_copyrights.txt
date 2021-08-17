@@ -1,0 +1,20 @@
+Canyon Theme
+Original title: Abandeoned Fields
+Source: https://freesound.org/people/Dredile/sounds/164272/
+Author: Dredile
+License: CC0 1.0 https://creativecommons.org/publicdomain/zero/1.0/
+Changes: vorbis compression
+
+Church Theme
+Original title: horror ambience 10
+Source: https://freesound.org/people/klankbeeld/sounds/133100/
+Author: klankbeeld
+License: CC-BY 3.0 https://creativecommons.org/licenses/by/3.0/
+Changes: vorbis compression
+
+Desert Theme
+Original title: Savanna stomp groove
+Source: https://freesound.org/people/jobro/sounds/76731/
+Author: jobro
+License: CC-BY 3.0 https://creativecommons.org/licenses/by/3.0/
+Changes: vorbis compression
