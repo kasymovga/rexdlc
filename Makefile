@@ -8,4 +8,4 @@ extra: zzz-rexdlc_flagicons.pk3 zzz-rexdlc_nadgets_v3.pk3 zzz-rexdlc_rm_laser.pk
 
 zzz-rexdlc_%.pk3: %
 	test -f $</rexdlc_$<.serverpackage || echo 1 > $</rexdlc_$<.serverpackage
-	cd $< && 7z a -tzip -mx=9  ../$@ *
+	sh mkpk3 $< $@

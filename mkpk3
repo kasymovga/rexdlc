@@ -1,0 +1,184 @@
+#!/bin/sh
+GLOSS_QUALITY=80
+LM_QUALITY=99
+GLOW_QUALITY=80
+NORM_QUALITY=80
+BUMP_QUALITY=80
+OTHER_QUALITY=70
+echo "$# $0 $@"
+while true
+do
+	case "$1" in
+		-glossquality)
+			GLOSS_QUALITY="$2"
+			shift 2
+			;;
+		-lmquality)
+			LM_QUALITY="$2"
+			shift 2
+			;;
+		-glowquality)
+			GLOW_QUALITY="$2"
+			shift 2
+			;;
+		-normquality)
+			NORM_QUALITY="$2"
+			shift 2
+			;;
+		-bumpquality)
+			BUMP_QUALITY="$2"
+			shift 2
+			;;
+		-otherquality)
+			BUMP_QUALITY="$2"
+			shift 2
+			;;
+		*)
+			break
+			;;
+	esac
+done
+if test "$#" -ne 2 -a "$#" -ne 1
+then
+	echo "Usage: $0 [-glossquality 1-99] [-bumpquality 1-99] [-lmquality 1-99] [-normquality 1-99] [-otherquality 1-99] <dirname> [filename]"
+	exit 1
+fi
+if test "$2" = ""
+then
+	TIMESTAMP="`date +%Y%m%d%H%M`"
+	OUTFILENAME="$DIR-$TIMESTAMP.pk3"
+else
+	OUTFILENAME="$2"
+fi
+DIR=${1%/}
+
+command_check() {
+	if type "$1"
+	then
+		return 0
+	else
+		echo "Command not found: $1"
+		exit 1
+	fi
+}
+
+command_check 7z
+command_check gm
+
+type_of_texture() {
+	case "`basename "$1"`" in
+	lm_*)
+		echo "lm"
+		;;
+	*_gloss.*)
+		echo "gloss"
+		;;
+	*_glow.*)
+		echo "glow"
+		;;
+	*_norm.*)
+		echo "norm"
+		;;
+	*_bump.*)
+		echo "bump"
+		;;
+	*)
+		echo "other"
+		;;
+	esac
+}
+
+quality_for_texture() {
+	case "`type_of_texture "$1"`" in
+	gloss)
+		echo "$GLOSS_QUALITY"
+		;;
+	lm)
+		echo "$LM_QUALITY"
+		;;
+	glow)
+		echo "$GLOW_QUALITY"
+		;;
+	norm)
+		echo "$NORM_QUALITY"
+		;;
+	bump)
+		echo "$BUMP_QUALITY"
+		;;
+	*)
+		echo "$OTHER_QUALITY"
+		;;
+	esac
+}
+
+test -d "$DIR" || exit 1
+rm -rf "$DIR.temp"
+rm -f "$DIR-"*.pk3
+cp -a "$DIR" "$DIR.temp"
+cd "$DIR.temp" || exit 1
+rm -f maps/*.autosave.map
+rm -f maps/*_converted.map
+rm -f maps/*.bak
+rm -f maps/*.prt
+rm -f maps/*.srf
+find -iname thumbs.db -delete
+for png_f in `find -name \*.png`
+do
+	test -h "$png_f" && continue
+	echo "$png_f"
+	base_f=${png_f%.png}
+	jpg_f="$base_f"".jpg"
+	ALPHAMEAN="`gm convert "$png_f" -channel opacity  -process Analyze= -format "%[BrightnessMean]" info:-`"
+	if test "$ALPHAMEAN" = 0
+	then
+		gm convert -quality "`quality_for_texture "$png_f"`" "$png_f" "$jpg_f"
+		rm -f "$png_f"
+	else
+		rm -f "$jpg_f"
+	fi
+done
+for png_f in `find -name \*.png`
+do
+	test -h "$png_f" || continue
+	test -f "$png_f" && continue
+	target="`readlink "$png_f"`"
+	target_jpg=${arget%.png}.jpg
+	ln -sf "$target_jpg" "$png_f"
+	mv "$png_f" ${png_f%.png}.jpg
+done
+find -name '*_gloss.png' -delete
+find -name '*_bump.png' -delete
+find -name '*_norm.png' -delete
+#find -name '*_glow.png' -delete
+for tga_f in `find -name \*.tga`
+do
+	test -h "$tga_f" && continue
+	echo "$tga_f"
+	base_f=${tga_f%.tga}
+	jpg_f="$base_f"".jpg"
+	ALPHAMEAN="`gm convert "$tga_f" -channel opacity  -process Analyze= -format "%[BrightnessMean]" info:-`"
+	if test "$ALPHAMEAN" = 0
+	then
+		gm convert -quality  "`quality_for_texture "$tga_f"`"  "$tga_f" "$jpg_f"
+		rm -f "$tga_f"
+	else
+		rm -f "$jpg_f"
+	fi
+done
+for tga_f in `find -name \*.tga`
+do
+	test -h "$tga_f" || continue
+	test -f "$tga_f" && continue
+	target="`readlink "$tga_f"`"
+	target_jpg=${target%.tga}.jpg
+	ln -sf "$target_jpg" "$tga_f"
+	mv "$tga_f" ${tga_f%.tga}.jpg
+done
+find -name '*_gloss.tga' -delete
+find -name '*_bump.tga' -delete
+find -name '*_norm.tga' -delete
+#find -name '*_glow.tga' -delete
+7z a -mx=9 pk3.zip *
+cd - > /dev/null
+mv "$DIR.temp/pk3.zip" "$OUTFILENAME"
+rm -rf "$DIR.temp"
