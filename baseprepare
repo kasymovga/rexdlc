@@ -1,0 +1,195 @@
+#!/bin/sh
+cd "`dirname "$0"`" || exit 1
+TEMPDIR=""
+
+clean() {
+	test -n "$TEMPDIR" && rm -rf "$TEMPDIR"
+}
+
+fail() {
+	echo "$@"
+	clean
+	exit 1
+}
+
+mkdir_or_fail() {
+	mkdir -p "$1" || fail "Cannot create directory $1"
+}
+
+unzip_file_or_fail() {
+	unzip "$1" "$2" -d "$3" || fail "Extracting $1 to $2 failed"
+}
+
+unzip_or_fail() {
+	unzip "$1" -d "$2" || fail "Extracting $1 to $2 failed"
+}
+
+mv_or_fail() {
+	DEST="${@: -1}"
+	mkdir_or_fail "$DEST"
+	while test $# -gt 1
+	do
+		mv "$1" "$DEST" || fail "Moving $1 to $DEST failed"
+		shift
+	done
+}
+
+NEXUIZZIP=""
+TEMPDIR="`pwd`/tmp"
+clean
+for F in ../nexuiz-252.zip nexuiz-252.zip
+do
+	if test -f "$F"
+	then
+		NEXUIZZIP="$F"
+	fi
+done
+if test -z "$NEXUIZZIP"
+then
+	fail "nexuiz-252.zip not found"
+fi
+mkdir_or_fail "$TEMPDIR"
+unzip_file_or_fail "$NEXUIZZIP" Nexuiz/data/data20091001.pk3 "$TEMPDIR"
+unzip_or_fail "$TEMPDIR/Nexuiz/data/data20091001.pk3" "$TEMPDIR"
+rm -rf "$TEMPDIR/Nexuiz"
+mv_or_fail \
+		"$TEMPDIR"/scripts/domination.shader \
+		"$TEMPDIR"/scripts/electro.shader \
+		"$TEMPDIR"/scripts/flamethrower.shader \
+		"$TEMPDIR"/scripts/hlac.shader \
+		"$TEMPDIR"/scripts/leiprojectile.shader \
+		"$TEMPDIR"/scripts/onslaught.shader \
+		"$TEMPDIR"/scripts/portals.shader \
+		"$TEMPDIR"/scripts/sbshield.shader \
+		"$TEMPDIR"/scripts/sphere.shader \
+		"$TEMPDIR"/scripts/tuba.shader "$TEMPDIR/base-models/scripts/"
+mkdir_or_fail "$TEMPDIR"/base-models/textures
+mv_or_fail \
+		"$TEMPDIR"/textures/ac* \
+		"$TEMPDIR"/textures/bloodyskull* \
+		"$TEMPDIR"/textures/campingrifle* \
+		"$TEMPDIR"/textures/carni* \
+		"$TEMPDIR"/textures/cellammoskin* \
+		"$TEMPDIR"/textures/cleanskull.* \
+		"$TEMPDIR"/textures/cockpit* \
+		"$TEMPDIR"/textures/crylink* \
+		"$TEMPDIR"/textures/domination \
+		"$TEMPDIR"/textures/el_jumpp.* \
+		"$TEMPDIR"/textures/electro.* \
+		"$TEMPDIR"/textures/eye.* \
+		"$TEMPDIR"/textures/f_shotgun.* \
+		"$TEMPDIR"/textures/fb* \
+		"$TEMPDIR"/textures/fireball* \
+		"$TEMPDIR"/textures/flags \
+		"$TEMPDIR"/textures/flamethrower* \
+		"$TEMPDIR"/textures/fricka* \
+		"$TEMPDIR"/textures/generator* \
+		"$TEMPDIR"/textures/gib* \
+		"$TEMPDIR"/textures/glauncher* \
+		"$TEMPDIR"/textures/glscope* \
+		"$TEMPDIR"/textures/grenademodelskin* \
+		"$TEMPDIR"/textures/grunt* \
+		"$TEMPDIR"/textures/hagar2* \
+		"$TEMPDIR"/textures/headhunter* \
+		"$TEMPDIR"/textures/heroine* \
+		"$TEMPDIR"/textures/hlac* \
+		"$TEMPDIR"/textures/hook* \
+		"$TEMPDIR"/textures/insurrectionist* \
+		"$TEMPDIR"/textures/invincible* \
+		"$TEMPDIR"/textures/items \
+		"$TEMPDIR"/textures/jumppad* \
+		"$TEMPDIR"/textures/laser* \
+		"$TEMPDIR"/textures/ldarl.* \
+		"$TEMPDIR"/textures/light1.* \
+		"$TEMPDIR"/textures/light2.* \
+		"$TEMPDIR"/textures/light3.* \
+		"$TEMPDIR"/textures/light4.* \
+		"$TEMPDIR"/textures/lurk* \
+		"$TEMPDIR"/textures/lycanthrope* \
+		"$TEMPDIR"/textures/marine* \
+		"$TEMPDIR"/textures/meat* \
+		"$TEMPDIR"/textures/mulder* \
+		"$TEMPDIR"/textures/muzzle* \
+		"$TEMPDIR"/textures/nex* \
+		"$TEMPDIR"/textures/ons_* \
+		"$TEMPDIR"/textures/pickups* \
+		"$TEMPDIR"/textures/pomp* \
+		"$TEMPDIR"/textures/portalgun* \
+		"$TEMPDIR"/textures/portals \
+		"$TEMPDIR"/textures/pyria* \
+		"$TEMPDIR"/textures/quark* \
+		"$TEMPDIR"/textures/reptile* \
+		"$TEMPDIR"/textures/rl* \
+		"$TEMPDIR"/textures/sb_shield.* \
+		"$TEMPDIR"/textures/shellsammo* \
+		"$TEMPDIR"/textures/shock* \
+		"$TEMPDIR"/textures/shotgun2* \
+		"$TEMPDIR"/textures/shotgun_sight.* \
+		"$TEMPDIR"/textures/skadi* \
+		"$TEMPDIR"/textures/spawn.* \
+		"$TEMPDIR"/textures/specop* \
+		"$TEMPDIR"/textures/spiderbot* \
+		"$TEMPDIR"/textures/strength.* \
+		"$TEMPDIR"/textures/strength_glow.* \
+		"$TEMPDIR"/textures/thrust* \
+		"$TEMPDIR"/textures/train* \
+		"$TEMPDIR"/textures/tuba* \
+		"$TEMPDIR"/textures/uzi* \
+		"$TEMPDIR"/textures/wakazachi* \
+		"$TEMPDIR"/textures/xolar* "$TEMPDIR"/base-models/textures/
+mv_or_fail "$TEMPDIR/scripts" "$TEMPDIR/textures" "$TEMPDIR/base-textures/"
+mv_or_fail "$TEMPDIR/sound/" "$TEMPDIR/base-sounds/"
+rm -rf "$TEMPDIR/base-sounds/sound/tutorial"
+rm -rf "$TEMPDIR/base-textures/textures/tutorial"
+mv_or_fail "$TEMPDIR/gfx/" "$TEMPDIR/particles/" "$TEMPDIR/base-gfx/"
+for M in \
+		accident \
+		aggressor \
+		aneurysm \
+		basement \
+		basementctf \
+		bleach \
+		bloodprison \
+		bloodprisonctf \
+		bluesky \
+		cyberparcour01 \
+		darkzone \
+		desertfactory \
+		dieselpower \
+		downer \
+		eggandbacon \
+		evilspace \
+		farewell \
+		final_rage \
+		nr_piece-o-cake \
+		ons-reborn \
+		racetrack \
+		reslimed \
+		ruiner \
+		runningman \
+		runningman_1on1remix \
+		runningmanctf \
+		silvercity \
+		skyway \
+		slimepit \
+		soylent \
+		starship \
+		stormkeep \
+		stormkeep2 \
+		strength \
+		toxic \
+		warfare
+do
+	mv_or_fail "$TEMPDIR"/maps/"$M".{bsp,mapinfo,map} "$TEMPDIR"/base-maps/maps/
+	test -f "$TEMPDIR"/maps/"$M".jpg && mv_or_fail "$TEMPDIR"/maps/"$M".jpg "$TEMPDIR"/base-maps/maps/
+	test -f "$TEMPDIR"/maps/"$M".tga && mv_or_fail "$TEMPDIR"/maps/"$M".tga "$TEMPDIR"/base-maps/maps/
+	test -f "$TEMPDIR"/maps/"$M".waypoints && mv_or_fail "$TEMPDIR"/maps/"$M".waypoints "$TEMPDIR"/base-maps/maps/
+	test -f "$TEMPDIR"/maps/"$M".rtlights && mv_or_fail "$TEMPDIR"/maps/"$M".rtlights "$TEMPDIR"/base-maps/maps/
+	test -d "$TEMPDIR"/maps/"$M" && mv_or_fail "$TEMPDIR"/maps/"$M" "$TEMPDIR"/base-maps-lightmaps/maps/
+done
+mv_or_fail "$TEMPDIR"/maps/_init/_init.bsp "$TEMPDIR"/base-maps/maps/_init
+cp -a datapatches/gfx "$TEMPDIR"/base-gfx/ || fail "Copying patch data failed"
+cp -a datapatches/sound "$TEMPDIR"/base-sounds/ || fail "Copying patch data failed"
+rm -rf base-*
+mv_or_fail "$TEMPDIR"/base-* ./
+clean

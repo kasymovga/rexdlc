@@ -5,6 +5,7 @@ GLOW_QUALITY=80
 NORM_QUALITY=80
 BUMP_QUALITY=80
 OTHER_QUALITY=70
+ALPHAJPEG=0
 echo "$# $0 $@"
 while true
 do
@@ -33,6 +34,10 @@ do
 			BUMP_QUALITY="$2"
 			shift 2
 			;;
+		-alphajpeg)
+			ALPHAJPEG=1
+			shift
+			;;
 		*)
 			break
 			;;
@@ -40,7 +45,7 @@ do
 done
 if test "$#" -ne 2 -a "$#" -ne 1
 then
-	echo "Usage: $0 [-glossquality 1-99] [-bumpquality 1-99] [-lmquality 1-99] [-normquality 1-99] [-otherquality 1-99] <dirname> [filename]"
+	echo "Usage: $0 [-glossquality 1-99] [-bumpquality 1-99] [-lmquality 1-99] [-normquality 1-99] [-otherquality 1-99] [-alphajpeg] <dirname> [filename]"
 	exit 1
 fi
 if test "$2" = ""
@@ -64,6 +69,7 @@ command_check() {
 
 command_check 7z
 command_check gm
+command_check oggenc
 
 type_of_texture() {
 	case "`basename "$1"`" in
@@ -134,7 +140,12 @@ do
 		gm convert -quality "`quality_for_texture "$png_f"`" "$png_f" "$jpg_f"
 		rm -f "$png_f"
 	else
-		rm -f "$jpg_f"
+		if test "$ALPHAJPEG" = 1
+		then
+			gm convert -quality "`quality_for_texture "$png_f"`" "$png_f" "$jpg_f"
+			gm convert -quality "`quality_for_texture "$png_f"`" "$png_f" -channel opacity "$base_f""_alpha.jpg"
+			rm -f "$png_f"
+		fi
 	fi
 done
 for png_f in `find -name \*.png`
@@ -146,9 +157,9 @@ do
 	ln -sf "$target_jpg" "$png_f"
 	mv "$png_f" ${png_f%.png}.jpg
 done
-find -name '*_gloss.png' -delete
-find -name '*_bump.png' -delete
-find -name '*_norm.png' -delete
+#find -name '*_gloss.png' -delete
+#find -name '*_bump.png' -delete
+#find -name '*_norm.png' -delete
 #find -name '*_glow.png' -delete
 for tga_f in `find -name \*.tga`
 do
@@ -162,7 +173,12 @@ do
 		gm convert -quality  "`quality_for_texture "$tga_f"`"  "$tga_f" "$jpg_f"
 		rm -f "$tga_f"
 	else
-		rm -f "$jpg_f"
+		if test "$ALPHAJPEG" = 1
+		then
+			gm convert -quality  "`quality_for_texture "$tga_f"`"  "$tga_f" "$jpg_f"
+			gm convert -quality "`quality_for_texture "$tga_f"`" "$tga_f" -channel opacity "$base_f""_alpha.jpg"
+			rm -f "$tga_f"
+		fi
 	fi
 done
 for tga_f in `find -name \*.tga`
@@ -174,10 +190,15 @@ do
 	ln -sf "$target_jpg" "$tga_f"
 	mv "$tga_f" ${tga_f%.tga}.jpg
 done
-find -name '*_gloss.tga' -delete
-find -name '*_bump.tga' -delete
-find -name '*_norm.tga' -delete
+#find -name '*_gloss.tga' -delete
+#find -name '*_bump.tga' -delete
+#find -name '*_norm.tga' -delete
 #find -name '*_glow.tga' -delete
+for wav_f in `find -name \*.wav`
+do
+	oggenc -q 8 -b 144 "$wav_f"
+	rm -f "$wav_f"
+done
 7z a -mx=9 pk3.zip *
 cd - > /dev/null
 mv "$DIR.temp/pk3.zip" "$OUTFILENAME"
