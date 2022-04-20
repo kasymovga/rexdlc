@@ -143,7 +143,7 @@ do
 		if test "$ALPHAJPEG" = 1
 		then
 			gm convert -quality "`quality_for_texture "$png_f"`" "$png_f" "$jpg_f"
-			gm convert -quality "`quality_for_texture "$png_f"`" "$png_f" -channel opacity "$base_f""_alpha.jpg"
+			gm convert -quality "`quality_for_texture "$png_f"`" "$png_f" -channel opacity -negate "$base_f""_alpha.jpg"
 			rm -f "$png_f"
 		fi
 	fi
@@ -176,7 +176,7 @@ do
 		if test "$ALPHAJPEG" = 1
 		then
 			gm convert -quality  "`quality_for_texture "$tga_f"`"  "$tga_f" "$jpg_f"
-			gm convert -quality "`quality_for_texture "$tga_f"`" "$tga_f" -channel opacity "$base_f""_alpha.jpg"
+			gm convert -quality "`quality_for_texture "$tga_f"`" "$tga_f" -channel opacity -negate "$base_f""_alpha.jpg"
 			rm -f "$tga_f"
 		fi
 	fi

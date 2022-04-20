@@ -137,7 +137,8 @@ mv_or_fail \
 		"$TEMPDIR"/textures/uzi* \
 		"$TEMPDIR"/textures/wakazachi* \
 		"$TEMPDIR"/textures/xolar* "$TEMPDIR"/base-models/textures/
-mv_or_fail "$TEMPDIR/scripts" "$TEMPDIR/textures" "$TEMPDIR/base-textures/"
+mv_or_fail "$TEMPDIR/models" "$TEMPDIR"/base-models/
+mv_or_fail "$TEMPDIR/env" "$TEMPDIR/scripts" "$TEMPDIR/textures" "$TEMPDIR/base-textures/"
 mv_or_fail "$TEMPDIR/sound/" "$TEMPDIR/base-sounds/"
 rm -rf "$TEMPDIR/base-sounds/sound/tutorial"
 rm -rf "$TEMPDIR/base-textures/textures/tutorial"
