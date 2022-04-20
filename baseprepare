@@ -35,7 +35,7 @@ mv_or_fail() {
 }
 
 NEXUIZZIP=""
-TEMPDIR="`pwd`/tmp"
+TEMPDIR="./tmp"
 clean
 for F in ../nexuiz-252.zip nexuiz-252.zip
 do
@@ -142,6 +142,12 @@ mv_or_fail "$TEMPDIR/env" "$TEMPDIR/scripts" "$TEMPDIR/textures" "$TEMPDIR/base-
 mv_or_fail "$TEMPDIR/sound/" "$TEMPDIR/base-sounds/"
 rm -rf "$TEMPDIR/base-sounds/sound/tutorial"
 rm -rf "$TEMPDIR/base-textures/textures/tutorial"
+for F in `find "$TEMPDIR/base-textures/" -name '*_norm.*' -o -name '*_bump.*' -o -name '*_glow.*' -o -name '*_gloss.*'`
+do
+	TEXTUREDIRPATH=${F#$TEMPDIR/base-textures/}
+	TEXTUREDIRPATH="`dirname "$TEXTUREDIRPATH"`"
+	mv_or_fail "$F" "$TEMPDIR/base-textures-extra/$TEXTUREDIRPATH/"
+done
 mv_or_fail "$TEMPDIR/gfx/" "$TEMPDIR/particles/" "$TEMPDIR/base-gfx/"
 for M in \
 		accident \
@@ -186,11 +192,15 @@ do
 	test -f "$TEMPDIR"/maps/"$M".tga && mv_or_fail "$TEMPDIR"/maps/"$M".tga "$TEMPDIR"/base-maps/maps/
 	test -f "$TEMPDIR"/maps/"$M".waypoints && mv_or_fail "$TEMPDIR"/maps/"$M".waypoints "$TEMPDIR"/base-maps/maps/
 	test -f "$TEMPDIR"/maps/"$M".rtlights && mv_or_fail "$TEMPDIR"/maps/"$M".rtlights "$TEMPDIR"/base-maps/maps/
+	test -f "$TEMPDIR"/maps/"$M".bgs && mv_or_fail "$TEMPDIR"/maps/"$M".bgs "$TEMPDIR"/base-maps/maps/
 	test -d "$TEMPDIR"/maps/"$M" && mv_or_fail "$TEMPDIR"/maps/"$M" "$TEMPDIR"/base-maps-lightmaps/maps/
 done
 mv_or_fail "$TEMPDIR"/maps/_init/_init.bsp "$TEMPDIR"/base-maps/maps/_init
 cp -a datapatches/gfx "$TEMPDIR"/base-gfx/ || fail "Copying patch data failed"
+cp -a datapatches/models "$TEMPDIR"/base-models/ || fail "Copying patch data failed"
 cp -a datapatches/sound "$TEMPDIR"/base-sounds/ || fail "Copying patch data failed"
-rm -rf base-*
+cp -a datapatches/scripts "$TEMPDIR"/base-textures/ || fail "Copying patch data failed"
+cp -a datapatches/maps "$TEMPDIR"/base-maps/ || fail "Copying patch data failed"
+rm -rf base-*/
 mv_or_fail "$TEMPDIR"/base-* ./
 clean
