@@ -63,6 +63,7 @@ then
 	echo "Usage: $0 [-glossquality 1-99] [-bumpquality 1-99] [-lmquality 1-99] [-normquality 1-99] [-otherquality 1-99] [-noogg] [-nojpeg] [-alphajpeg] <dirname> [filename]"
 	exit 1
 fi
+DIR=${1%/}
 if test "$2" = ""
 then
 	TIMESTAMP="`date +%Y%m%d%H%M`"
@@ -70,7 +71,6 @@ then
 else
 	OUTFILENAME="$2"
 fi
-DIR=${1%/}
 if test -f "$DIR""_mkpk3.options"
 then
 	case "$DIR" in
