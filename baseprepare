@@ -34,6 +34,16 @@ mv_or_fail() {
 	done
 }
 
+cp_or_fail() {
+	DEST="${@: -1}"
+	mkdir_or_fail "$DEST"
+	while test $# -gt 1
+	do
+		cp -a "$1" "$DEST" || fail "Copying $1 to $DEST failed"
+		shift
+	done
+}
+
 NEXUIZZIP=""
 TEMPDIR="./tmp"
 clean
@@ -196,11 +206,14 @@ do
 	test -d "$TEMPDIR"/maps/"$M" && mv_or_fail "$TEMPDIR"/maps/"$M" "$TEMPDIR"/base-maps-lightmaps/maps/
 done
 mv_or_fail "$TEMPDIR"/maps/_init/_init.bsp "$TEMPDIR"/base-maps/maps/_init
-cp -a datapatches/gfx "$TEMPDIR"/base-gfx/ || fail "Copying patch data failed"
-cp -a datapatches/models "$TEMPDIR"/base-models/ || fail "Copying patch data failed"
-cp -a datapatches/sound "$TEMPDIR"/base-sounds/ || fail "Copying patch data failed"
-cp -a datapatches/scripts "$TEMPDIR"/base-textures/ || fail "Copying patch data failed"
-cp -a datapatches/maps "$TEMPDIR"/base-maps/ || fail "Copying patch data failed"
+cp_or_fail datapatches/gfx "$TEMPDIR"/base-gfx/
+cp_or_fail datapatches/effectinfo.txt "$TEMPDIR"/base-gfx/
+cp_or_fail datapatches/models "$TEMPDIR"/base-models/
+cp_or_fail datapatches/sound "$TEMPDIR"/base-sounds/
+cp_or_fail datapatches/scripts "$TEMPDIR"/base-textures/
+cp_or_fail datapatches/maps "$TEMPDIR"/base-maps/
+cp_or_fail "$TEMPDIR/base-textures/scripts"  "$TEMPDIR/base-gfx-dedicated/"
+cp_or_fail "$TEMPDIR/base-gfx/effectinfo.txt"  "$TEMPDIR/base-gfx-dedicated/"
 rm -rf base-*/
 mv_or_fail "$TEMPDIR"/base-* ./
 clean
