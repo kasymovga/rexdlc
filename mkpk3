@@ -172,13 +172,13 @@ then
 		if test "$ALPHAMEAN" = 0
 		then
 			gm convert -quality "`quality_for_texture "$png_f"`" "$png_f" "$jpg_f"
-			rm -f "$png_f"
+			test -f "$jpg_f" && rm -f "$png_f"
 		else
 			if test "$ALPHA_JPEG" = 1
 			then
 				gm convert -quality "`quality_for_texture "$png_f"`" "$png_f" "$jpg_f"
 				gm convert -quality "`quality_for_texture "$png_f"`" "$png_f" -channel opacity -negate "$base_f""_alpha.jpg"
-				rm -f "$png_f"
+				test -f "$jpg_f" && rm -f "$png_f"
 			fi
 		fi
 	done
@@ -191,10 +191,6 @@ then
 		ln -sf "$target_jpg" "$png_f"
 		mv "$png_f" ${png_f%.png}.jpg
 	done
-	#find -name '*_gloss.png' -delete
-	#find -name '*_bump.png' -delete
-	#find -name '*_norm.png' -delete
-	#find -name '*_glow.png' -delete
 	for tga_f in `find -name \*.tga`
 	do
 		test -h "$tga_f" && continue
@@ -205,13 +201,13 @@ then
 		if test "$ALPHAMEAN" = 0
 		then
 			gm convert -quality  "`quality_for_texture "$tga_f"`"  "$tga_f" "$jpg_f"
-			rm -f "$tga_f"
+			test -f "$jpg_f" && rm -f "$tga_f"
 		else
 			if test "$ALPHA_JPEG" = 1
 			then
 				gm convert -quality  "`quality_for_texture "$tga_f"`"  "$tga_f" "$jpg_f"
 				gm convert -quality "`quality_for_texture "$tga_f"`" "$tga_f" -channel opacity -negate "$base_f""_alpha.jpg"
-				rm -f "$tga_f"
+				test -f "$jpg_f" && rm -f "$tga_f"
 			fi
 		fi
 	done
