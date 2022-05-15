@@ -1,0 +1,7 @@
+Author: JohnnyBlack ( https://blenderartists.org/u/johnnyblack/activity/portfolio )
+License(s): CC0 (Creative Commons 0)
+
+http://opengameart.org/content/3rd-person-blender-sci-fi-pack
+
+This was released for a crowd-funding campaign a while back: https://www.indiegogo.com/projects/free-game-resources-for-blender-3d-and-more
+See also here: http://www.blenderartists.org/forum/showthread.php?294639-Free-blender-GE-resources-%28model-tex-chars-etc%29
