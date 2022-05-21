@@ -9,6 +9,7 @@ BUMP_QUALITY=80
 OTHER_QUALITY=70
 ALPHA_QUALITY=90
 ALPHA_JPEG=0
+PNG_COMPRESSION=0
 echo "$# $0 $@"
 while true
 do
@@ -53,6 +54,10 @@ do
 			ALPHA_JPEG=1
 			shift
 			;;
+		-pngcompression)
+			PNG_COMPRESSION=1
+			shift
+			;;
 		*)
 			break
 			;;
@@ -60,7 +65,7 @@ do
 done
 if test "$#" -ne 2 -a "$#" -ne 1
 then
-	echo "Usage: $0 [-glossquality 1-99] [-bumpquality 1-99] [-lmquality 1-99] [-normquality 1-99] [-otherquality 1-99] [-noogg] [-nojpeg] [-alphajpeg] <dirname> [filename]"
+	echo "Usage: $0 [-glossquality 1-99] [-bumpquality 1-99] [-lmquality 1-99] [-normquality 1-99] [-otherquality 1-99] [-noogg] [-nojpeg] [-alphajpeg] [-pngcompression] <dirname> [filename]"
 	exit 1
 fi
 DIR=${1%/}
@@ -94,8 +99,18 @@ command_check() {
 }
 
 command_check 7z
-command_check gm
-command_check oggenc
+if test "$JPEG" = 1 -o "$PNG_COMPRESSION" = 0
+then
+	command_check gm
+fi
+if test "$OGG" = 1
+then
+	command_check oggenc
+fi
+if test "$PNG_COMPRESSION" = 1
+then
+	command_check pngquant
+fi
 
 type_of_texture() {
 	case "`basename "$1"`" in
@@ -219,6 +234,28 @@ then
 		target_jpg=${target%.tga}.jpg
 		ln -sf "$target_jpg" "$tga_f"
 		mv "$tga_f" ${tga_f%.tga}.jpg
+	done
+fi
+if test "$PNG_COMPRESSION" = 1
+then
+	for png_f in `find -name \*.png`
+	do
+		test -h "$png_f" && continue
+		#optipng -o7 -nb "$png_f"
+		pngquant -o "$png_f.opt.png" "$png_f"
+		mv "$png_f.opt.png" "$png_f"
+	done
+	#find -name '*_glow.png' -delete
+	for tga_f in `find -name \*.tga`
+	do
+		test -h "$tga_f" && continue
+		base_f=${tga_f%.tga}
+		png_f="$base_f"".png"
+		gm convert "$tga_f" "$png_f"
+		rm -f "$tga_f"
+		#optipng -o7 -nb "$png_f"
+		pngquant -o "$png_f.opt.png" "$png_f"
+		mv "$png_f.opt.png" "$png_f"
 	done
 fi
 if test "$OGG" = 1
