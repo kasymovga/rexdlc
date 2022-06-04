@@ -1,0 +1,9 @@
+textures/xnexgun
+{
+	dpreflectcube cubemaps/default/sky
+	dpoffsetmapping - 0.3 match8 64
+	{
+		map textures/xnexgun.tga
+		rgbgen lightingDiffuse
+	}
+}

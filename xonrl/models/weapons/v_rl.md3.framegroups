@@ -1,0 +1,5 @@
+1 1 1.000000 0 // none
+1 31 30.000000 0 // groupified_0_anim
+32 31 30.000000 0 // groupified_1_anim
+63 101 3.000000 1 // groupified_2_anim
+164 101 3.000000 1 // groupified_3_anim

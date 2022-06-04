@@ -1,0 +1,5 @@
+1 1 1.000000 0 // no animation
+1 25 30.000000 0 // groupified_0_anim
+26 25 30.000000 0 // groupified_1_anim
+51 101 3.000000 1 // groupified_2_anim
+152 101 3.000000 1 // groupified_3_anim

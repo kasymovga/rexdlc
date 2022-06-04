@@ -1,0 +1,2 @@
+Borrowed from Xonotic
+License: GPL2
