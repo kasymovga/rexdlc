@@ -1,0 +1,5 @@
+#version 1
+source striped
+line_alpha 0
+sector_gap 0 30
+sector_gap_alt 0 30

@@ -1,0 +1,42 @@
+#version 1
+extern_image_sector_fill_left gfx/hud/skins/default/sector_fill_left
+extern_image_sector_fill_right gfx/hud/skins/default/sector_fill_right
+extern_image_sector_fill_center gfx/hud/skins/default/sector_fill_center
+border_left_scale 0.3
+border_right_scale 0.3
+border_left_offset -7 5
+border_right_offset 7 -5
+border_simple 0
+border_right_width 3
+border_left_width 3
+border_teamcolor always
+border_teamcolor_mod 0.1 0.1 0.1
+border_teamcolor_brightness 1
+sector_teamcolor always
+sector_teamcolor_brightness 1
+sector_alpha 0.2
+sector_color 1 1 1
+sector_fill stretch
+sector_gap_screen 0 1
+border_alpha 0.9
+line_color 0 0 0
+line_alpha 0
+line_full 1
+flash_alphamod 1
+flash_intmod 2
+border_drawmode normal
+sector_padding -27 -27 -30 -30
+flash_line_imod 0
+flash_line_amod 0
+flash_sector_imod 1
+flash_sector_amod 1
+flash_border_imod 1
+flash_border_amod 1
+progress_bgalpha 0.3
+progress_mode 1
+extern_image_progress_head gfx/hud/progress_head
+progress_head_color 1 1 1
+progress_head_alpha 0.7
+progress_border_overcharge_alpha 1.2
+progress_border_overcharge_colormod 1 1 1
+progress_border_overcharge_colormul 1

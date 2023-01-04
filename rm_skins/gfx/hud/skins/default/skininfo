@@ -1,0 +1,45 @@
+#version 1
+border_left_scale 0.3
+border_right_scale 0.3
+border_left_offset -7 -3
+border_right_offset 7 3
+border_simple 0
+border_right_width 3
+border_left_width 3
+border_teamcolor always
+border_teamcolor_brightness 1
+sector_teamcolor always
+sector_teamcolor_brightness 0.2
+sector_alpha 0.4
+sector_color 0 0 0
+sector_fill stretch
+border_alpha 0.7
+line_color 0 0 0
+line_alpha 0
+line_full 1
+flash_alphamod 1
+flash_intmod 2
+border_drawmode normal
+sector_padding -27 -27 -30 -30
+flash_line_imod 1
+flash_line_amod 0.2
+flash_sector_imod 1
+flash_sector_amod 0
+flash_border_imod 1
+flash_border_amod 1
+progress_bgalpha 1
+progress_mode 3
+progress_sector_colormode 0
+progress_sector_alpha 0
+progress_border_colormode 2
+progress_border_color 1 1 1
+progress_border_alpha 1
+progress_border_overcharge_alpha 0
+progress_border_overcharge_colormod 0 0 0
+progress_border_overcharge_colormul 1
+progress_sector_overcharge_alpha 1.1
+progress_sector_overcharge_colormod 0 0 0
+progress_sector_overcharge_colormul 2.5
+extern_image_progress_head gfx/hud/progress_head
+progress_head_color 1 1 1
+progress_head_alpha 0.7
