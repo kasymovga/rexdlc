@@ -101,7 +101,7 @@ command_check() {
 command_check 7z
 if test "$JPEG" = 1 -o "$PNG_COMPRESSION" = 0
 then
-	command_check gm
+	command_check convert
 fi
 if test "$OGG" = 1
 then
@@ -183,16 +183,16 @@ then
 		echo "$png_f"
 		base_f=${png_f%.png}
 		jpg_f="$base_f"".jpg"
-		ALPHAMEAN="`gm convert "$png_f" -channel opacity  -process Analyze= -format "%[BrightnessMean]" info:-`"
-		if test "$ALPHAMEAN" = 0
+		ALPHAMEAN="`convert "$png_f" -alpha on -alpha extract -format "%[fx:mean]" info:`"
+		if test "$ALPHAMEAN" = 1
 		then
-			gm convert -quality "`quality_for_texture "$png_f"`" "$png_f" "$jpg_f"
+			convert -quality "`quality_for_texture "$png_f"`" "$png_f" "$jpg_f"
 			test -f "$jpg_f" && rm -f "$png_f"
 		else
 			if test "$ALPHA_JPEG" = 1
 			then
-				gm convert -quality "`quality_for_texture "$png_f"`" "$png_f" "$jpg_f"
-				gm convert -quality "`quality_for_texture "$png_f"`" "$png_f" -channel opacity -negate "$base_f""_alpha.jpg"
+				convert -quality "`quality_for_texture "$png_f"`" "$png_f" "$jpg_f"
+				convert -quality "`quality_for_texture "$png_f"`" "$png_f" -channel opacity -negate "$base_f""_alpha.jpg"
 				test -f "$jpg_f" && rm -f "$png_f"
 			fi
 		fi
@@ -212,16 +212,16 @@ then
 		echo "$tga_f"
 		base_f=${tga_f%.tga}
 		jpg_f="$base_f"".jpg"
-		ALPHAMEAN="`gm convert "$tga_f" -channel opacity  -process Analyze= -format "%[BrightnessMean]" info:-`"
-		if test "$ALPHAMEAN" = 0
+		ALPHAMEAN="`convert "$tga_f" -alpha on -alpha extract -format "%[fx:mean]" info:`"
+		if test "$ALPHAMEAN" = 1
 		then
-			gm convert -quality  "`quality_for_texture "$tga_f"`"  "$tga_f" "$jpg_f"
+			convert -auto-orient -quality  "`quality_for_texture "$tga_f"`"  "$tga_f" "$jpg_f"
 			test -f "$jpg_f" && rm -f "$tga_f"
 		else
 			if test "$ALPHA_JPEG" = 1
 			then
-				gm convert -quality  "`quality_for_texture "$tga_f"`"  "$tga_f" "$jpg_f"
-				gm convert -quality "`quality_for_texture "$tga_f"`" "$tga_f" -channel opacity -negate "$base_f""_alpha.jpg"
+				convert -auto-orient -quality  "`quality_for_texture "$tga_f"`"  "$tga_f" "$jpg_f"
+				convert -auto-orient -quality "`quality_for_texture "$tga_f"`" "$tga_f" -channel opacity -negate "$base_f""_alpha.jpg"
 				test -f "$jpg_f" && rm -f "$tga_f"
 			fi
 		fi
@@ -251,7 +251,7 @@ then
 		test -h "$tga_f" && continue
 		base_f=${tga_f%.tga}
 		png_f="$base_f"".png"
-		gm convert "$tga_f" "$png_f"
+		convert -auto-orient "$tga_f" "$png_f"
 		rm -f "$tga_f"
 		#optipng -o7 -nb "$png_f"
 		pngquant -o "$png_f.opt.png" "$png_f"
