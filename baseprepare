@@ -25,7 +25,7 @@ unzip_or_fail() {
 }
 
 mv_or_fail() {
-	DEST="${@: -1}"
+	eval DEST=\"\$$#\"
 	mkdir_or_fail "$DEST"
 	while test $# -gt 1
 	do
@@ -35,7 +35,7 @@ mv_or_fail() {
 }
 
 cp_or_fail() {
-	DEST="${@: -1}"
+	eval DEST=\"\$$#\"
 	mkdir_or_fail "$DEST"
 	while test $# -gt 1
 	do
