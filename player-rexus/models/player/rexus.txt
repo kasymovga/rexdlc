@@ -1,0 +1,7 @@
+Rexus
+models/player/rexus
+0
+models/player/rexus.dpm
+species human
+
+Rexus
