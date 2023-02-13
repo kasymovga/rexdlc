@@ -1,0 +1,11 @@
+Heroine FB
+models/player/heroine
+0
+models/player/jeandarc.dpm
+species human
+
+Solo Fighter
+
+Sex: Female
+Weight: 50 kg
+Age: 23

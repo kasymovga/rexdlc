@@ -1,0 +1,11 @@
+Lycanthrope FB
+models/player/lycanthrope
+0
+models/player/lycanthrope.dpm
+species human
+
+Monsterous Opponent
+
+Sex: Female
+Weight: 106 kg
+Age: 24

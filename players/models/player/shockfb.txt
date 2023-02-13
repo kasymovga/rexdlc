@@ -1,0 +1,11 @@
+Shock Trooper FB
+models/player/shock
+0
+models/player/shock.dpm
+species human
+
+Necro Warrior
+
+Sex: Male
+Weight: 66 kg
+Age: 65

@@ -1,0 +1,11 @@
+Fricka FB
+models/player/fricka
+0
+models/player/visitant.dpm
+species alien
+
+Mutated Warrior
+
+Sex: Female
+Weight: 57 kg
+Age: 16

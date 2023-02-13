@@ -1,0 +1,11 @@
+Skadi FB
+models/player/skadi
+0
+models/player/skadi.dpm
+species human
+
+Necro Warrior
+
+Sex: Female
+Weight: 52 kg
+Age: 63

@@ -1,0 +1,11 @@
+Insurrectionist FB
+models/player/insurrectionist
+0
+models/player/insurrectionist.dpm
+species human
+
+Warrior
+
+Sex: Male
+Weight: 87 kg
+Age: 56

@@ -1,0 +1,10 @@
+Reptile FB
+models/player/reptile
+0
+models/player/lurk.dpm
+species alien
+
+Reptilian Combatant
+
+Weight: 80 kg
+Age: 32

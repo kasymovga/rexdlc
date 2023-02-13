@@ -1,0 +1,11 @@
+Headhunter FB
+models/player/headhunter
+0
+models/player/headhunter.dpm
+species alien
+
+Mutated Warrior
+
+Sex: Male
+Weight: 115 kg
+Age: 34
