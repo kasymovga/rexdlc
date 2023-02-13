@@ -44,6 +44,10 @@ cp_or_fail() {
 	done
 }
 
+cp_single_or_fail() {
+	cp "$1" "$2" || fail "Copying $1 to $2 failed"
+}
+
 NEXUIZZIP=""
 TEMPDIR="./tmp"
 clean
@@ -216,11 +220,18 @@ for DPM in players/models/player/*.dpm
 do
 	ZYM=${DPM%.dpm}.zym
 	ZYM="$TEMPDIR/base-models/${ZYM#players/}"
-	cp "$DPM" "$ZYM" || fail Cannot copy "$DPM" to "$ZYM"
-	cp "$DPM".framegroups "$ZYM".framegroups || fail Cannot copy "$DPM" to "$ZYM"
+	cp_single_or_fail "$DPM" "$ZYM"
+	cp_single_or_fail "$DPM".framegroups "$ZYM".framegroups
 	SKIN=`cat "$DPM"_0.skin | sed s/,.*$//`
 	sed -i "s/^.*,/$SKIN,/" "$ZYM"_?.skin || fail Cannot edit "$ZYM"_0.skin
 done
+cp_single_or_fail player-rexus/models/player/rexus.dpm "$TEMPDIR"/base-models/models/player/nexus.zym || fail Cannot copy
+cp_single_or_fail player-rexus/models/player/rexus_lod1.dpm "$TEMPDIR"/base-models/models/player/nexus_lod1.zym || fail Cannot copy
+cp_single_or_fail player-rexus/models/player/rexus_lod2.dpm "$TEMPDIR"/base-models/models/player/nexus_lod2.zym || fail Cannot copy
+cp_single_or_fail player-rexus/models/player/rexus.dpm.framegroups "$TEMPDIR"/base-models/models/player/nexus.zym.framegroups || fail Cannot copy
+cp_single_or_fail player-rexus/models/player/rexus_lod1.dpm.framegroups "$TEMPDIR"/base-models/models/player/nexus_lod1.zym.framegroups || fail Cannot copy
+cp_single_or_fail player-rexus/models/player/rexus_lod2.dpm.framegroups "$TEMPDIR"/base-models/models/player/nexus_lod2.zym.framegroups || fail Cannot copy
+sed -i "s/^.*,/rexus,/" "$TEMPDIR"/base-models/models/player/nexus*.skin || fail Cannot edit "$TEMPDIR/base-models/models/player/nexus*.skin"
 rm -rf base-gfx base-maps base-maps-lightmaps base-models base-sounds base-textures base-textures-extra
 mv_or_fail "$TEMPDIR"/base-* ./
 clean
