@@ -25,7 +25,7 @@ unzip_or_fail() {
 }
 
 mv_or_fail() {
-	eval DEST=\"\$$#\"
+	eval DEST=\"\${$#}\"
 	mkdir_or_fail "$DEST"
 	while test $# -gt 1
 	do
@@ -35,7 +35,7 @@ mv_or_fail() {
 }
 
 cp_or_fail() {
-	eval DEST=\"\$$#\"
+	eval DEST=\"\${$#}\"
 	mkdir_or_fail "$DEST"
 	while test $# -gt 1
 	do
@@ -212,8 +212,14 @@ cp_or_fail datapatches/models "$TEMPDIR"/base-models/
 cp_or_fail datapatches/sound "$TEMPDIR"/base-sounds/
 cp_or_fail datapatches/scripts "$TEMPDIR"/base-textures/
 cp_or_fail datapatches/maps "$TEMPDIR"/base-maps/
-cp_or_fail "$TEMPDIR/base-textures/scripts"  "$TEMPDIR/base-gfx-dedicated/"
-cp_or_fail "$TEMPDIR/base-gfx/effectinfo.txt"  "$TEMPDIR/base-gfx-dedicated/"
-rm -rf base-*/
+for DPM in players/models/player/*.dpm
+do
+	ZYM=${DPM%.dpm}.zym
+	ZYM="$TEMPDIR/base-models/${ZYM#players/}"
+	cp "$DPM" "$ZYM" || fail Cannot copy "$DPM" to "$ZYM"
+	SKIN=`cat "$DPM"_0.skin | sed s/,.*$//`
+	sed -i "s/^.*,/$SKIN,/" "$ZYM"_0.skin || fail Cannot edit "$ZYM"_0.skin
+done
+rm -rf base-gfx base-maps base-maps-lightmaps base-models base-sounds base-textures base-textures-extra
 mv_or_fail "$TEMPDIR"/base-* ./
 clean
