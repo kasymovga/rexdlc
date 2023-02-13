@@ -217,8 +217,9 @@ do
 	ZYM=${DPM%.dpm}.zym
 	ZYM="$TEMPDIR/base-models/${ZYM#players/}"
 	cp "$DPM" "$ZYM" || fail Cannot copy "$DPM" to "$ZYM"
+	cp "$DPM".framegroups "$ZYM".framegroups || fail Cannot copy "$DPM" to "$ZYM"
 	SKIN=`cat "$DPM"_0.skin | sed s/,.*$//`
-	sed -i "s/^.*,/$SKIN,/" "$ZYM"_0.skin || fail Cannot edit "$ZYM"_0.skin
+	sed -i "s/^.*,/$SKIN,/" "$ZYM"_?.skin || fail Cannot edit "$ZYM"_0.skin
 done
 rm -rf base-gfx base-maps base-maps-lightmaps base-models base-sounds base-textures base-textures-extra
 mv_or_fail "$TEMPDIR"/base-* ./
