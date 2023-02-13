@@ -1,0 +1,7 @@
+Overkill Soldier
+models/player/okmale1
+0
+models/player/okmale1.dpm
+species human
+
+Soldier

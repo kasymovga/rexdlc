@@ -1,0 +1,7 @@
+Overkill Robot
+models/player/okrobot1
+0
+models/player/okrobot1.dpm
+species robot_shiny
+
+Robot
