@@ -1,5 +1,5 @@
 Rexus
-models/player/rexus
+models/player/mulder
 0
 models/player/rexus.dpm
 species human
