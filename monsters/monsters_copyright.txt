@@ -1,0 +1,2 @@
+Borrowed from OpenArena
+License: GPL2
