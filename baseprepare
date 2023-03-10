@@ -216,10 +216,10 @@ cp_or_fail datapatches/models "$TEMPDIR"/base-models/
 cp_or_fail datapatches/sound "$TEMPDIR"/base-sounds/
 cp_or_fail datapatches/scripts "$TEMPDIR"/base-textures/
 cp_or_fail datapatches/maps "$TEMPDIR"/base-maps/
-for DPM in players/models/player/*.dpm
+for DPM in players_v3/models/player/*.dpm
 do
 	ZYM=${DPM%.dpm}.zym
-	ZYM="$TEMPDIR/base-models/${ZYM#players/}"
+	ZYM="$TEMPDIR/base-models/${ZYM#players_v3/}"
 	cp_single_or_fail "$DPM" "$ZYM"
 	cp_single_or_fail "$DPM".framegroups "$ZYM".framegroups
 	SKIN=`cat "$DPM"_0.skin | sed s/,.*$//`
