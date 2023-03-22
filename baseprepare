@@ -162,6 +162,8 @@ do
 	TEXTUREDIRPATH="`dirname "$TEXTUREDIRPATH"`"
 	mv_or_fail "$F" "$TEMPDIR/base-textures-extra/$TEXTUREDIRPATH/"
 done
+mkdir_or_fail "$TEMPDIR/n25keys"
+mv_or_fail "$TEMPDIR/gfx/hud/keys" "$TEMPDIR/n25keys/gfx/hud/"
 mv_or_fail "$TEMPDIR/gfx/" "$TEMPDIR/particles/" "$TEMPDIR/base-gfx/"
 for M in \
 		accident \
@@ -233,5 +235,5 @@ cp_single_or_fail player-rexus/models/player/rexus_lod1.dpm.framegroups "$TEMPDI
 cp_single_or_fail player-rexus/models/player/rexus_lod2.dpm.framegroups "$TEMPDIR"/base-models/models/player/nexus_lod2.zym.framegroups || fail Cannot copy
 sed -i "s/^.*,/rexus,/" "$TEMPDIR"/base-models/models/player/nexus*.skin || fail Cannot edit "$TEMPDIR/base-models/models/player/nexus*.skin"
 rm -rf base-gfx base-maps base-maps-lightmaps base-models base-sounds base-textures base-textures-extra
-mv_or_fail "$TEMPDIR"/base-* ./
+mv_or_fail "$TEMPDIR"/base-* "$TEMPDIR"/n25keys ./
 clean
