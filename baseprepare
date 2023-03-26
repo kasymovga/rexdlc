@@ -234,6 +234,6 @@ cp_single_or_fail player-rexus/models/player/rexus.dpm.framegroups "$TEMPDIR"/ba
 cp_single_or_fail player-rexus/models/player/rexus_lod1.dpm.framegroups "$TEMPDIR"/base-models/models/player/nexus_lod1.zym.framegroups || fail Cannot copy
 cp_single_or_fail player-rexus/models/player/rexus_lod2.dpm.framegroups "$TEMPDIR"/base-models/models/player/nexus_lod2.zym.framegroups || fail Cannot copy
 sed -i "s/^.*,/rexus,/" "$TEMPDIR"/base-models/models/player/nexus*.skin || fail Cannot edit "$TEMPDIR/base-models/models/player/nexus*.skin"
-rm -rf base-gfx base-maps base-maps-lightmaps base-models base-sounds base-textures base-textures-extra
+rm -rf base-gfx base-maps base-maps-lightmaps base-models base-sounds base-textures base-textures-extra n25keys
 mv_or_fail "$TEMPDIR"/base-* "$TEMPDIR"/n25keys ./
 clean
