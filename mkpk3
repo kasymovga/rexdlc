@@ -266,7 +266,7 @@ then
 		rm -f "$wav_f"
 	done
 fi
-7z a -snl -m0=lzma -mx=9 pk3.zip *
+7z a -snl -mx=9 pk3.zip *
 cd - > /dev/null
 mv "$DIR.temp/pk3.zip" "$OUTFILENAME"
 rm -rf "$DIR.temp"
