@@ -1,0 +1,1320 @@
+default
+{
+	castShadows 1
+	receiveShadows 1
+	sampleSize 8
+	longestCurve 0.000000
+}
+
+0 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+1 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_blue
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+2 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_blue
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+3 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_blue
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+4 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_blue
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+5 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_blue
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+6 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_blue
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+7 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_blue
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+8 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_blue
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+9 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_blue
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+10 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_blue
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+11 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_blue
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+12 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_red
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+13 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_red
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+14 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_red
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+15 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_red
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+16 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_red
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+17 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_red
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+18 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_red
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+19 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_red
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+20 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_red
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+21 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_red
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+22 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_floor/e8clangfloor04_red
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+23 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/skies/desert
+	sampleSize 0
+}
+
+24 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/skies/desert
+	sampleSize 0
+}
+
+25 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/skies/desert
+	sampleSize 0
+}
+
+26 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/skies/desert
+	sampleSize 0
+}
+
+27 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/skies/desert
+	sampleSize 0
+}
+
+28 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_blue
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+29 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_blue
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+30 // ESurfaceType::Meta V: 34 I: 96 planar
+{
+	shader textures/evil8_base/e8crete03_blue
+	lightmapAxis ( 0.000000 1.000000 0.000000 )
+}
+
+31 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_blue
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+32 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_blue
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+33 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_blue
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+34 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_blue
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+35 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_blue
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+36 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_blue
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+37 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_blue
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+38 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_blue
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+39 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_blue
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+40 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_blue
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+41 // ESurfaceType::Meta V: 34 I: 96 planar
+{
+	shader textures/evil8_base/e8_base1
+	lightmapAxis ( 0.000000 1.000000 0.000000 )
+}
+
+42 // ESurfaceType::Meta V: 34 I: 96 planar
+{
+	shader textures/evil8_base/e8_base1
+	lightmapAxis ( -0.000000 -1.000000 -0.000000 )
+}
+
+43 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_red
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+44 // ESurfaceType::Meta V: 34 I: 96 planar
+{
+	shader textures/evil8_base/e8crete03_red
+	lightmapAxis ( -0.000000 -1.000000 -0.000000 )
+}
+
+45 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_red
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+46 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_red
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+47 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_red
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+48 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_red
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+49 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_red
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+50 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_red
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+51 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_red
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+52 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_red
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+53 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_red
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+54 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_red
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+55 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03_red
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+56 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1b
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+57 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1b
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+58 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1b
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+59 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1b
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+60 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+61 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+62 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+63 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+64 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+65 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+66 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+67 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+68 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+69 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+70 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+71 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+72 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+73 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+74 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+75 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+76 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+77 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+78 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+79 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+80 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+81 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+82 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+83 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+84 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+85 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+86 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+87 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+88 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+89 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+90 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+91 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8_base1
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+92 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+93 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+94 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+95 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+96 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+97 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+98 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+99 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+100 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+101 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+102 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+103 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+104 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+105 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+106 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+107 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+108 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+109 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+110 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+111 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+112 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+113 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+114 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+115 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+116 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+117 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+118 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+119 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+120 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+121 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+122 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+123 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/evil8_base/e8crete03
+	entity 1
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+124 // ESurfaceType::Meta V: 56 I: 168 planar
+{
+	shader textures/evil8_floor/e8warning256
+	entity 1
+	castShadows 0
+	lightmapAxis ( -0.000000 -0.000000 -1.000000 )
+}
+
+125 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 4
+	castShadows 0
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+126 // ESurfaceType::Meta V: 12 I: 30 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 4
+	castShadows 0
+	lightmapAxis ( -0.000000 -0.000000 -1.000000 )
+}
+
+127 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 4
+	castShadows 0
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+128 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 4
+	castShadows 0
+	lightmapAxis ( -0.000000 -1.000000 -0.000000 )
+}
+
+129 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 4
+	castShadows 0
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+130 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 4
+	castShadows 0
+	lightmapAxis ( -0.000000 -1.000000 -0.000000 )
+}
+
+131 // ESurfaceType::Meta V: 12 I: 30 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 4
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+132 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 4
+	castShadows 0
+	lightmapAxis ( 0.000000 1.000000 0.000000 )
+}
+
+133 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 4
+	castShadows 0
+	lightmapAxis ( -0.000000 -1.000000 -0.000000 )
+}
+
+134 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 4
+	castShadows 0
+	lightmapAxis ( 0.000000 1.000000 0.000000 )
+}
+
+135 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 4
+	castShadows 0
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+136 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 4
+	castShadows 0
+	lightmapAxis ( 0.000000 1.000000 0.000000 )
+}
+
+137 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 4
+	castShadows 0
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+138 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 4
+	castShadows 0
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+139 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+140 // ESurfaceType::Meta V: 12 I: 30 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -0.000000 -0.000000 -1.000000 )
+}
+
+141 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+142 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -0.000000 -1.000000 -0.000000 )
+}
+
+143 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+144 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -0.000000 -1.000000 -0.000000 )
+}
+
+145 // ESurfaceType::Meta V: 12 I: 30 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+146 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+147 // ESurfaceType::Meta V: 12 I: 30 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -0.000000 -0.000000 -1.000000 )
+}
+
+148 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+149 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+150 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+151 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -0.000000 -1.000000 -0.000000 )
+}
+
+152 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 0.000000 1.000000 0.000000 )
+}
+
+153 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -0.000000 -1.000000 -0.000000 )
+}
+
+154 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+155 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -1.000000 -0.000000 -0.000000 )
+}
+
+156 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -0.000000 -1.000000 -0.000000 )
+}
+
+157 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -0.000000 -1.000000 -0.000000 )
+}
+
+158 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -0.000000 -1.000000 -0.000000 )
+}
+
+159 // ESurfaceType::Meta V: 12 I: 30 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 0.000000 0.000000 1.000000 )
+}
+
+160 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 0.000000 1.000000 0.000000 )
+}
+
+161 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 0.000000 1.000000 0.000000 )
+}
+
+162 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 0.000000 1.000000 0.000000 )
+}
+
+163 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -0.000000 -1.000000 -0.000000 )
+}
+
+164 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( -0.000000 -1.000000 -0.000000 )
+}
+
+165 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+166 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 0.000000 1.000000 0.000000 )
+}
+
+167 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 0.000000 1.000000 0.000000 )
+}
+
+168 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 0.000000 1.000000 0.000000 )
+}
+
+169 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+170 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+171 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+172 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 0.000000 1.000000 0.000000 )
+}
+
+173 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+174 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+175 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 0.000000 1.000000 0.000000 )
+}
+
+176 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+177 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
+178 // ESurfaceType::Meta V: 4 I: 6 planar
+{
+	shader textures/egyptsoc_mat/wood07
+	entity 5
+	castShadows 0
+	lightmapAxis ( 1.000000 0.000000 0.000000 )
+}
+
