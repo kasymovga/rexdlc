@@ -1,2 +1,6 @@
 *.pk3
 *.serverpackage
+*.srf
+*.prt
+*.autosave.map
+*.bak
