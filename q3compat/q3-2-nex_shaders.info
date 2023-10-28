@@ -1,0 +1,6 @@
+Modified quake 3 shaders to work better in nexuiz. Water shaders 
+changed to darkplaces reflective water shader. Most of the 
+Quake 3 maps should work and look way better in Nexuiz with 
+these shaders.
+
+Modified by Unknown[NF]. Please credit where used.

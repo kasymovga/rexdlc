@@ -1,0 +1,29 @@
+Some textures (or parts of texture images) used in 'z-gpl-q3a2oa-textures-v5'
+were taken from the following sources:
+
+'q32thecore' texture pack (set 1)
+Copyright (C) Kris [Idolator] Hagedoorn
+idolator@planetquake.com
+License: freely usable in both commercial and non-commercial projects
+
+Nexuiz (release 2.42) textures (various authors, see Nexuiz 'readme')
+http://alientrap.org/nexuiz
+License: GNU General Public License version 2
+
+Openarena (release 0.8.1) textures (various authors, see Openarena 'readme')
+http://openarena.ws
+License: GNU General Public License version 2
+
+Graphical content (freely usable in both commercial and non-commercial
+projects) was also obtained from the following sources:
+
+http://www.spiralgraphics.biz/packs/base_index.htm
+http://www.mayang.com/textures/
+http://www.bencloward.com/resources_textures.shtml
+http://pdtextures.blogspot.com/
+http://www.lughertexture.com/
+http://vyonyx.com/?cat=17
+http://www.texturebits.blogspot.com/
+http://texturez.com/
+http://www.art.eonworks.com/free/textures/free-textures-01.html
+http://www.imageafter.com/textures.php
