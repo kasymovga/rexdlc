@@ -6,6 +6,7 @@ textures/trak4/northwing
 	surfaceparm trans
 	surfaceparm alphashadow
 	surfaceparm nonsolid
+	nopicmip
 	{
 		map $lightmap
 		alphaFunc GT0
@@ -26,6 +27,7 @@ textures/trak4/southwing
 	surfaceparm trans
 	surfaceparm alphashadow
 	surfaceparm nonsolid
+	nopicmip
 	{
 		map $lightmap
 		alphaFunc GT0
@@ -46,6 +48,7 @@ textures/trak4/help
 	surfaceparm trans
 	surfaceparm alphashadow
 	surfaceparm nonsolid
+	nopicmip
 	{
 		map $lightmap
 		alphaFunc GT0
@@ -66,6 +69,7 @@ textures/trak4/pills
 	surfaceparm trans
 	surfaceparm alphashadow
 	surfaceparm nonsolid
+	nopicmip
 	{
 		map $lightmap
 		alphaFunc GT0
@@ -86,6 +90,7 @@ textures/trak4/theater1
 	surfaceparm trans
 	surfaceparm alphashadow
 	surfaceparm nonsolid
+	nopicmip
 	{
 		map $lightmap
 		alphaFunc GT0
@@ -106,6 +111,7 @@ textures/trak4/theater2
 	surfaceparm trans
 	surfaceparm alphashadow
 	surfaceparm nonsolid
+	nopicmip
 	{
 		map $lightmap
 		alphaFunc GT0
@@ -126,6 +132,7 @@ textures/trak4/exit
 	surfaceparm trans
 	surfaceparm alphashadow
 	surfaceparm nonsolid
+	nopicmip
 	{
 		map $lightmap
 		alphaFunc GT0
@@ -146,6 +153,7 @@ textures/trak4/iso1
 	surfaceparm trans
 	surfaceparm alphashadow
 	surfaceparm nonsolid
+	nopicmip
 	{
 		map $lightmap
 		alphaFunc GT0
@@ -166,6 +174,7 @@ textures/trak4/iso2
 	surfaceparm trans
 	surfaceparm alphashadow
 	surfaceparm nonsolid
+	nopicmip
 	{
 		map $lightmap
 		alphaFunc GT0
@@ -186,6 +195,7 @@ textures/trak4/iso3
 	surfaceparm trans
 	surfaceparm alphashadow
 	surfaceparm nonsolid
+	nopicmip
 	{
 		map $lightmap
 		alphaFunc GT0
