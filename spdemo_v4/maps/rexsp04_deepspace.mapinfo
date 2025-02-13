@@ -4,6 +4,7 @@ author 21ad
 cdtrack 10
 // uncomment this if you added weapon pickups: has weapons
 type coop
+size -4224.0 -4224.0 -128.0 4224.0 4224.0 4224.0
 // optional: fog density red green blue alpha mindist maxdist
 // optional: settemp_for_type (all|gametypename) cvarname value
 // optional: clientsettemp_for_type (all|gametypename) cvarname value
