@@ -1,0 +1,13 @@
+/*
+Generated framegroups file for h_pryaxe2
+Used by DarkPlaces to simulate frame groups in DPM models.
+*/
+
+1 22 20 0 meleeattack1
+23 23 20 0 meleeattack2
+46 120 20 1 idle
+166 39 20 0 reload
+205 22 20 0 meleeattack1_akimbo
+227 23 20 0 meleeattack2
+250 121 20 1 idle_akimbo
+371 39 20 0 reload
