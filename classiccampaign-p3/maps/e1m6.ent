@@ -543,7 +543,6 @@
 {
 "target" "t46"
 "targetname" "t45"
-"angle" "90"
 "origin" "-1416 1157 -872"
 "classname" "path_corner"
 }
