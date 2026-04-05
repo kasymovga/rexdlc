@@ -294,6 +294,7 @@ textures/base_trim/tin
 		map textures/base_trim/tin.tga
 		//blendFunc GL_ONE GL_ONE
 		rgbGen identity
+		tcgen environment
 	}
 }       
 textures/base_trim/dark_tin
