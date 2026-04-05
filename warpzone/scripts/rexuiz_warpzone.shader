@@ -7,7 +7,6 @@ textures/common/warpzone
     // surfaceparm nonsolid // no, it must be solid like trigger
     surfaceparm trans
     surfaceparm nomarks
-    surfaceparm trans
     {
         map textures/common/warpzone/trans.tga // fully transparent
         blendfunc blend
