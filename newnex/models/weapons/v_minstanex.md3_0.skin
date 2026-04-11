@@ -7,3 +7,4 @@ plane_1,textures/rm_nex_scope_anim
 plane_2,textures/rm_nex_scope_overlay
 scope_glass,textures/rm_nex_scope_glass
 thingie,textures/rm_shotgun_barrel
+v_minstanex,textures/gunshader
