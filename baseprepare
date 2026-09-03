@@ -203,7 +203,9 @@ for M in \
 		toxic \
 		warfare
 do
-	mv_or_fail "$TEMPDIR"/maps/"$M".{bsp,mapinfo,map} "$TEMPDIR"/base-maps/maps/
+	mv_or_fail "$TEMPDIR"/maps/"$M".bsp "$TEMPDIR"/base-maps/maps/
+	mv_or_fail "$TEMPDIR"/maps/"$M".mapinfo "$TEMPDIR"/base-maps/maps/
+	mv_or_fail "$TEMPDIR"/maps/"$M".map "$TEMPDIR"/base-maps/maps/
 	test -f "$TEMPDIR"/maps/"$M".jpg && mv_or_fail "$TEMPDIR"/maps/"$M".jpg "$TEMPDIR"/base-maps/maps/
 	test -f "$TEMPDIR"/maps/"$M".tga && mv_or_fail "$TEMPDIR"/maps/"$M".tga "$TEMPDIR"/base-maps/maps/
 	test -f "$TEMPDIR"/maps/"$M".waypoints && mv_or_fail "$TEMPDIR"/maps/"$M".waypoints "$TEMPDIR"/base-maps/maps/
